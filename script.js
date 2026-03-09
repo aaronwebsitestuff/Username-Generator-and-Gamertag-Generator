@@ -1,3 +1,12 @@
+/* FAST PAGE FADE */
+
+window.addEventListener("load", () => {
+document.body.classList.add("loaded");
+});
+
+
+/* USERNAME GENERATOR */
+
 const first = [
 "Shadow","Nova","Pixel","Ghost","Void","Lunar","Toxic","Crimson","Neon","Frost",
 "Storm","Cyber","Omega","Alpha","Dark","Silent","Iron","Solar","Quantum","Turbo"
@@ -9,11 +18,9 @@ const second = [
 ];
 
 const tick = new Audio("tick.mp3");
-
 tick.volume = 0.6;
 
 let spinning = false;
-
 let historyList = [];
 
 function randomName(){
@@ -41,9 +48,7 @@ spinning = true;
 const result = document.getElementById("result");
 
 let rolls = 0;
-
 const maxRolls = 10;
-
 let speed = 40;
 
 function spin(){
@@ -95,7 +100,6 @@ historyElement.innerHTML="";
 historyList.forEach(n=>{
 
 const li=document.createElement("li");
-
 li.innerText=n;
 
 historyElement.appendChild(li);
@@ -107,7 +111,6 @@ historyElement.appendChild(li);
 function copyName(){
 
 const text=document.getElementById("result").innerText;
-
 navigator.clipboard.writeText(text);
 
 }
