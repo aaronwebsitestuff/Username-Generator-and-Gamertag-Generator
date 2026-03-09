@@ -10,6 +10,10 @@ align-items:center;
 min-height:100vh;
 margin:0;
 padding:20px;
+
+/* white border frame */
+box-sizing:border-box;
+border:6px solid white;
 }
 
 .card{
@@ -67,13 +71,10 @@ position:relative;
 position:absolute;
 width:100%;
 text-align:center;
-
 line-height:60px;
 
 transition:transform 0.12s linear;
 }
-
-/* mobile */
 
 @media (max-width:600px){
 
